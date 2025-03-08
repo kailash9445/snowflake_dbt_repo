@@ -1,0 +1,1 @@
+select   * from DB_KAILASH.SCH_KAILASH.TEST_TABLE;
