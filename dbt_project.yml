@@ -1,0 +1,2 @@
+name: "PJT_PROJECT_DBT"
+model-paths: ["models"]
