@@ -1,1 +1,1 @@
-select * from DB_KAILASH.SCH_KAILASH.TEST_TABLE limit 10;
+select * from DB_KAILASH.SCH_KAILASH.TEST_TABLE
