@@ -1,1 +1,0 @@
-select E.* from DB_KAILASH.SCH_KAILASH.EMPLOYEE E
