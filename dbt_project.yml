@@ -1,2 +1,6 @@
+version: 2.0.0
 name: "PJT_PROJECT_DBT"
-model-paths: ["models"]
+model-paths: ["mmodels"]
+seed-paths: ['seeds']
+analysis-paths: ['analysis']
+macro-paths: ['macros']

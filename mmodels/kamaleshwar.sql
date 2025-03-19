@@ -1,0 +1,1 @@
+select E.* from DB_KAILASH.SCH_KAILASH.country_codes E--country_codes  ##EMPLOYEE

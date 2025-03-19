@@ -1,0 +1,13 @@
+seeds:
+
+
+  - name: dim_names
+    config:
+      full_refresh: true
+      column_types:
+        ID: varchar(5)
+
+
+
+	      
+          

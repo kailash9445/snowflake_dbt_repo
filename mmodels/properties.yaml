@@ -1,0 +1,29 @@
+
+sources:
+
+
+  - name: "kailash sources"
+    
+    database: DB_KAILASH
+    schema: SCH_KAILASH
+    tables:
+        - name: USER
+        - name: PERSONS_SAMPLE_FDR
+
+models:
+  - name :    "kamaleshwar.sql"
+    config:
+      materialized: 'table'
+  - name : "naresh.sql"
+    config:
+      materialized: 'table'
+  - name : "kailash.sql"
+    config:
+      materialized: 'table'
+  - name : "kailash"
+    config:
+      materialized: 'view'   ######sql or simple name no problem
+  
+
+
+
