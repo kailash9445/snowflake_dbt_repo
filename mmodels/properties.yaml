@@ -8,6 +8,7 @@ sources:
     schema: SCH_KAILASH
     tables:
         - name: USER
+        - name: PERSONS_SAMPLE_FDR
 
 models:
   - name :    "kamaleshwar.sql"
