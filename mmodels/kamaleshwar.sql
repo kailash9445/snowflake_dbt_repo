@@ -1,1 +1,1 @@
-select E.* from DB_KAILASH.SCH_KAILASH.country_codes E--country_codes  ##EMPLOYEE
+select E.* from DB_KAILASH.SCH_KAILASH.BKP_EMPLOYEE E--country_codes  ##EMPLOYEE

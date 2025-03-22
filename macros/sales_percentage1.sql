@@ -1,3 +1,3 @@
-{% macro sales_percentage(a,b) %}
+{% macro sales_percentage1(a,b) %}
     (({{a}}-{{b}})/{{b}})*100
 {% endmacro %}
