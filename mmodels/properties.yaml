@@ -8,7 +8,7 @@ sources:
     schema: SCH_KAILASH
     tables:
         - name: USER
-        - name: PERSONS_SAMPLE_FDR
+        - name:MD_PERSONS_SAMPLE_FDR
         - name: PAY_MODES
 
 models:
