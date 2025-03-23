@@ -9,6 +9,7 @@ sources:
     tables:
         - name: USER
         - name: PERSONS_SAMPLE_FDR
+        - name: PAY_MODES
 
 models:
   - name :    "kamaleshwar.sql"
