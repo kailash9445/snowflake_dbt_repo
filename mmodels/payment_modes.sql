@@ -1,8 +1,8 @@
 
-{%- set j = dbt_utils.get_column_values (source("kailash sources","PAY_MODES"),'payment_mode') -%}
 select
-{%- for i in j %}
-sum(case when payment_mode =  '{{i}}'  then sales end) as {{i}}_SALES,
-{%- endfor -%}
-from {{source("kailash sources","PAY_MODES")}}
-
+sum(case when payment_mode =  'upi'  then sales end) as upi_SALES 
+,sum(case when payment_mode =  'cash'  then sales end) as cash_SALES 
+,sum(case when payment_mode =  'cc'  then sales end) as cc_SALES 
+,sum(case when payment_mode =  'dc'  then sales end) as dc_SALES 
+,sum(case when payment_mode =  'voucher'  then sales end) as voucher_SALES 
+from DB_KAILASH.SCH_KAILASH.PAY_MODES

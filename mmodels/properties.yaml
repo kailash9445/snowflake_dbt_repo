@@ -1,4 +1,4 @@
-
+ 
 sources:
 
 
@@ -12,7 +12,7 @@ sources:
         - name: PAY_MODES
 
 models:
-  - name :                       "kamaleshwar.sql"
+  - name : "kamaleshwar.sql"
     config:
       materialized: 'table'
   - name : "naresh.sql"
@@ -21,7 +21,7 @@ models:
   - name : "kailash.sql"
     config:
       materialized: 'table'
-  - name :                         "kailash"
+  - name : "kailash"
     config:
       materialized: 'view'   ######sql or simple name no problem
   
