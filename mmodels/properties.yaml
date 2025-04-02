@@ -1,9 +1,6 @@
  
 sources:
-
-
   - name: "kailash sources"
-    
     database: DB_KAILASH
     schema: SCH_KAILASH
     tables:
@@ -23,8 +20,12 @@ models:
       materialized: 'table'
   - name : "kailash"
     config:
-      materialized: 'view'   ######sql or simple name no problem
-  
-
+      materialized: 'view'   ###### sql or simple name no problem
+  - name : "my_1dbtmodel1"
+    config:
+      materialized: 'table'   ###### sql or simple name no problem
+  - name : "my_1dbtmode2"
+    config:
+      materialized: 'table'   ###### sql or simple name no problem
 
 
