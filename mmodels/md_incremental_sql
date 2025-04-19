@@ -1,0 +1,9 @@
+
+{{ config(
+    materialized='incremental') }}      
+      
+      
+select eno,ename
+
+from {{source("kailash sources","EMPLOYEE")}}
+
