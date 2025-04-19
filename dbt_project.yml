@@ -1,6 +1,33 @@
 #-version: 2.0.0--accepts-"" ok--'' ok
-name :  "PJT_PROJECT_DBT"
-model-paths: ['mmodels']
+#https://docs.getdbt.com/reference/commands/seed
+name :  "PROJECT_DEV"
+model-paths: ['models']
 seed-paths: ['seeds']
 analysis-paths: ['analysis']
 macro-paths: ['macros']
+snapshot-paths: ['snapshots']
+docs-paths: ["/Users/username/project/docs"]
+
+require-dbt-version: ">=1.0.0"
+config-version: 2
+
+
+vars:
+  'dbt_date:time_zone': 'America/Los_Angeles'
+
+
+
+
+vars:
+  # The `start_date` variable will be accessible in all resources
+  start_date: '2016-06-01'
+
+  # The `platforms` variable is only accessible to resources in the my_dbt_project project
+  my_dbt_project:
+    platforms: ['web', 'mobile']
+
+  # The `app_ids` variable is only accessible to resources in the snowplow package
+  snowplow:
+    app_ids: ['marketing', 'app', 'landing-page']
+
+    
