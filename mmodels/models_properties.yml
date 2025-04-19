@@ -1,0 +1,54 @@
+ 
+sources:
+
+
+  - name: "kailash sources"
+    database: DB_KAILASH
+    schema: SCH_KAILASH
+    tables:
+        - name: USER
+
+        - name: PERSONS_SAMPLE_FDR
+        - name: PAY_MODES
+        - name: EMPLOYEE
+        - name: VW_emp_10_20
+        - name: TBL_emp_10_20
+
+models:
+  - name : "kailash"      
+    config:
+      materialized: 'table'
+  - name : "kamaleshwar"
+    config:
+      materialized: 'view'
+  - name : "md_naresh.sql"      
+    config:
+      materialized: 'table'
+  - name : "naresh"
+    config:
+      materialized: 'table'
+  - name : "mdl_snapshot"
+    config:
+      materialized: 'table'   ######sql or simple name no problem MD_Kailash_AGG_VALUES.sql
+  - name : "md_persons_sample_fdr"
+    config:
+      materialized: 'table'
+  - name : "md_incremental"
+    config:
+      materialized: 'incremental'
+      incremental_strategy: 'table'
+      batch_size: 'day'
+      event_time : 'hiredate'
+      begin: '2025-01-01'
+  - name : "VW_emp_10_20"
+    config:
+      materialized: 'view'
+  
+  
+
+
+
+
+
+
+  
