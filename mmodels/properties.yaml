@@ -8,6 +8,7 @@ sources:
         - name: PERSONS_SAMPLE_FDR
         - name: PAY_MODES
         - name: EMPLOYEE 
+        - name: EMPLOYEE_bkp
         - name: product_details
 
 models:
