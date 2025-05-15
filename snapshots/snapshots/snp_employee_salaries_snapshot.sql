@@ -1,14 +1,14 @@
-{% snapshot snp_employee_salaries_snapshot %}
+{% snapshot snp_employee_salaries %}
 
-{% set unique_key = 'eno' %}
+{% set unique_key_column = 'eno' %}
 {% set strategy = 'check' %}
-{% set check_cols = ['ename', 'job'] %}
+{% set check_columns = ['ename', 'job'] %}
 
 {{ config(
     target_schema='snapshots',
-    unique_key=unique_key,
+    unique_key=unique_key_column,
     strategy=strategy,
-    check_cols=check_cols,
+    check_cols=check_columns,
     updated_at='updated_at'
 ) }}
 --TBL_emp_10_20
