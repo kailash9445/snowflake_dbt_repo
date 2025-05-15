@@ -1,5 +1,4 @@
 {% snapshot snp_snapshot_timestamp %}
-
     {{
         config(
           target_schema='snapshots',
