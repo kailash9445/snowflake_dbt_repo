@@ -1,5 +1,6 @@
 #-version: 2.0.0--accepts-"" ok--'' ok
 #https://docs.getdbt.com/reference/commands/seed
+#-   PROJECT_DEV  pjt_may2ndhalf
 name :  "PROJECT_DEV"
 model-paths: ['models']
 seed-paths: ['seeds']
@@ -14,11 +15,6 @@ config-version: 2
 
 vars:
   'dbt_date:time_zone': 'America/Los_Angeles'
-
-
-
-
-vars:
   # The `start_date` variable will be accessible in all resources
   start_date: '2016-06-01'
 
