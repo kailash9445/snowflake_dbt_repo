@@ -1,6 +1,6 @@
 {%snapshot ads_snapshot_kailashh_chk_ref%}--DB_KAILASH.SNAPSHOTSSS.ADS_SNAPSHOT_KAILASHH_CHK_REF
 {{
-    config(
+    config(MAIN
       target_schema='snapshotsss',
       unique_key = 'ENO',
       strategy='check',
