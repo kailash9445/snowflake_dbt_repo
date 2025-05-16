@@ -2,12 +2,12 @@
 #https://docs.getdbt.com/reference/commands/seed
 #-   PROJECT_DEV  pjt_may2ndhalf
 name :  "PROJECT_DEV"
-model-paths: ['models']
+model-paths: ['mmodels']
 seed-paths: ['seeds']
 analysis-paths: ['analysis']
 macro-paths: ['macros']
 snapshot-paths: ['snapshots']
-docs-paths: ["/Users/username/project/docs"]
+
 
 require-dbt-version: ">=1.0.0"
 config-version: 2
