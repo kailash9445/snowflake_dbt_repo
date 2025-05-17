@@ -1,0 +1,11 @@
+id,payment_mode,sales
+1,upi,1000
+2,cash,2000
+3,cash,100
+4,cash,2500
+5,dc,1700
+6,cc,600
+7,cc,1600
+8,cc,2300
+9,dc,2300
+10,voucher,0
