@@ -10,6 +10,7 @@ sources:
         - name: EMPLOYEE 
         - name: EMPLOYEE_bkp
         - name: product_details
+        - name: sales_and_costs
 
 models:
   - name : "kamaleshwar.sql"
