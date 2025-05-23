@@ -4,4 +4,4 @@ select * from DB_KAILASH.SCH_KAILASH.EMPLOYEE --country_codes  ##EMPLOYEE
 
 --select * from DB_KAILASH.SCH_KAILASH.EMPLOYEE   --country_codes  ##EMPLOYEE
 
---select c.* from DB_KAILASH.SCH_KAILASH.EMPLOYEE_BKP c
+--select c.* from DB_KAILASH.SCH_KAILASH.EMPLOYEE_BKP c kailash,kamalesh,naresh
