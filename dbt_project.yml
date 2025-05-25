@@ -7,7 +7,7 @@ seed-paths: ['seeds']
 analysis-paths: ['analysis']
 macro-paths: ['macros']
 snapshot-paths: ['snapshots']
-
+test-paths: ['tests']
 
 require-dbt-version: ">=1.0.0"
 config-version: 2
@@ -25,5 +25,10 @@ vars:
   # The `app_ids` variable is only accessible to resources in the snowplow package
   snowplow:
     app_ids: ['marketing', 'app', 'landing-page']
+
+tests:
+  project_dev:
+    +severity: warn
+
 
     
