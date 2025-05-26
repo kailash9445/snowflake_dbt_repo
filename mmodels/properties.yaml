@@ -21,18 +21,7 @@ models:
   - name : "naresh.sql"
     config:
       materialized: 'table'
-  - name : "kailash.sql"
-    config:
-      materialized: 'table'
-      hours_to_expiration: 168
-      persist_docs:
-      mmodels:
-        tags: ['naresh','kamaleshwar']
-    seeds:
-      +schema: mappings
-  - name : "kailash"
-    config:
-      materialized: 'view'   ###### sql or simple name no problem
+  
   - name : "my_1dbtmodel1"
     config:
       materialized: 'table'   ###### sql or simple name no problem
@@ -47,7 +36,3 @@ on-run-start:
 saved-queries:
   +schema: metrics
 
-target-path: "target"
-clean-targets:
-  - 'targets'
-  - 'dbt-packages'

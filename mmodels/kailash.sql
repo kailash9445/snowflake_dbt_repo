@@ -16,7 +16,6 @@ select * from DB_KAILASH.SCH_KAILASH.EMPLOYEE --country_codes  ##EMPLOYEE
 
 		    
      
-		  
-		
+--ENO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DPNO
           
         

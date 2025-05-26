@@ -1,1 +1,63 @@
 
+version: 2
+
+mmodels:
+  - name : "kailash.sql"
+    config:
+      materialized: 'table'
+      hours_to_expiration: 168
+      persist_docs:
+      mmodels:
+        tags: ['naresh','kamaleshwar']
+    columns:
+      - name: eno
+        tests:
+          - unique:
+            config:
+              where: "order_date = current_date" 
+          - not_null
+          - dbt_utils.expression_is_true:
+## expression: "order_items_subtotal = subtotal"
+          
+                
+      - name: dpno
+        tests:
+          - accepted_values:
+              values: [10,20]
+      - name: dpno
+        tests:
+          - relationships:
+              to: ref('customers')
+              field: id
+
+  - name: orders
+    columns:
+      - name: order_id
+        tests:
+          - kailash
+  
+# it is accepting anything above chek later..tests-kailash
+
+mmodels:
+  - name: kailash
+    description: "how to product retails"
+    columns:
+      - name: dpno
+        tests:
+      - dbt_utils.expression_is_true:
+        expression: "dpno"
+        where : “retail _price IS NOT NULL”
+# till now working
+  - name: util_even_numbers
+    columns:
+      - name: i
+        tests:
+          - dbt_utils.sequential_values:
+              interval: 2
+  - name: model_name
+    tests:
+      - dbt_utils.recency:
+          datepart: day
+          field: created_at
+          interval: 4
+          # it eill chek 4 days old date 

@@ -9,6 +9,13 @@ macro-paths: ['macros']
 snapshot-paths: ['snapshots']
 test-paths: ['tests']
 
+
+target-path: "target"
+clean-targets: 
+  - 'targets'
+  - 'dbt-packages'
+#clean-targets: [target, dbt_packages, logs]
+
 require-dbt-version: ">=1.0.0"
 config-version: 2
 
@@ -29,6 +36,6 @@ vars:
 tests:
   project_dev:
     +severity: warn
-
+# project level if any severity then it will warns us during job excution..
 
     
