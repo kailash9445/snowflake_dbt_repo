@@ -17,7 +17,7 @@ mmodels:
               where: "order_date = current_date" 
           - not_null
           - dbt_utils.expression_is_true:
-## expression: "order_items_subtotal = subtotal"
+## expression: "order_items_subtotal = subtotal"-
           
                 
       - name: dpno
