@@ -1,6 +1,9 @@
 {{ config(
     materialized='table') }}
 
+
+
+--{{ config(tags=['orders_related']) }}
 select eno,ename,job, 
 max(sal) as max_sal,
 avg(sal) as avg_sal,

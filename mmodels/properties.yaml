@@ -13,18 +13,15 @@ sources:
         - name: sales_and_costs
 
 models:
+  
   - name : "kamaleshwar.sql"
     config:
       materialized: 'table'
+
   - name : "naresh.sql"
     config:
       materialized: 'table'
-  - name : "kailash.sql"
-    config:
-      materialized: 'table'
-  - name : "kailash"
-    config:
-      materialized: 'view'   ###### sql or simple name no problem
+  
   - name : "my_1dbtmodel1"
     config:
       materialized: 'table'   ###### sql or simple name no problem
@@ -32,4 +29,10 @@ models:
     config:
       materialized: 'table'   ###### sql or simple name no problem
 
+
+on-run-start:
+  - "{{ mac_get_value_of_pii() }}"
+
+saved-queries:
+  +schema: metrics
 
