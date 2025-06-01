@@ -1,7 +1,7 @@
 {{ config(materialized='table') }}
 
 with source_t_sample as (
-    select country_code as col1  from {{ ref('country_codes') }}
+    select *  from {{ ref('country_codes') }}
 ),
 
 final as (
