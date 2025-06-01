@@ -1,4 +1,3 @@
-
 version: 2
 
 mmodels:
@@ -38,7 +37,7 @@ mmodels:
   
 # it is accepting anything above chek later..tests-kailash
 
-mmodels:
+
   - name: kailash
     description: "how to product retails"
     columns:
