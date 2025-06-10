@@ -60,4 +60,4 @@ mmodels:
           datepart: day
           field: created_at
           interval: 4
-          # it eill chek 4 days old date 
+          # it will chek 4 days old date 
