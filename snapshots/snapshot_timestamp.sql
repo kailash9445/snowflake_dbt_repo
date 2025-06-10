@@ -17,4 +17,4 @@
 --mdf(uniquekey,updated_at)
 --select * from DB_KAILASH.SCH_KAILASH.EMPLOYEE
 --user
---need to check above snapshot config .....but source is fine
+--need to check above snapshot config ..but source is fine
