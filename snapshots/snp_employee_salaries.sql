@@ -7,7 +7,7 @@
     unique_key=unique_key,
     strategy=strategy,
     check_cols=check_cols
-    updated_at='hiredate',
+    updated_at='hiredate'
 ) }}
 --TBL_emp_10_20
 --VW_emp_10_20
