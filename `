@@ -1,0 +1,3 @@
+{% macro mc_surrogate_key('ENAME', 'emaENAMEil', 'JOB') %}
+  {{ dbt_utils.generate_surrogate_key('ENAME', 'emaENAMEil', 'JOB') %}
+{% endmacro %}

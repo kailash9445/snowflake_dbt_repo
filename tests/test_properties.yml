@@ -13,6 +13,7 @@ mmodels:
       - name: eno
         tests:
           - unique:
+            column_name: eno
             config:
               where: "order_date = current_date" 
           - not_null

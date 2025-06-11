@@ -1,9 +1,10 @@
 with cte as (
 select hiredate,
-case when to_date(hiredate,'yyyy-mm-dd') is not null then 'valid format'
-else 'invalid format' end  as date_format_status
-from {{ ref('kailash') }}
-where hiredate is not null)
+case when to_date(hiredate,'yyyy-mm-dd') is not null then 'valid format' else 'invalid format' end  as date_format_status
+
+from {{source("kailash sources","EMPLOYEE")}}
+where hiredate is not null
+)
 
 select * 
 from cte 

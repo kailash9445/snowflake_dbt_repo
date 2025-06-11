@@ -1,6 +1,6 @@
 {%snapshot SNP_APRIL12EMPLOYEE %}
 
-{% set new_schema = target.schema +'_SS_KAILASH' %}
+{% set new_schema = target.schema +'_KAILASH' %}
 
 {{
     config(
@@ -16,4 +16,4 @@
 select c.eno,c.ename,c.job,c.sal from {{ref('kailash')}} c
 
 {% endsnapshot %}
---snapshot will be created only once,...untill u change th code it will not cretae new one
+--snapshot will be created only once,...untill u change the code it will not cretae new one
