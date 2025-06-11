@@ -1,6 +1,12 @@
 
 version: 2
-
+mmodels:
+  - name: my_model
+    columns:
+      - name: delivery_status
+        tests:
+          - accepted_values:
+              values: ['delivered', 'pending', 'failed']
 mmodels:
   - name : "kailash.sql"
     config:
@@ -24,13 +30,21 @@ mmodels:
       - name: dpno
         tests:
           - accepted_values:
+              values: ['blue', 'red']
+              config:
+                severity: warn
+                snowflake_warehouse: my_warehouse
+          - accepted_values:
               values: [10,20]
+              description: "This test checks whether there are unexpected delivery statuses. If it fails, check with logistics team"
       - name: dpno
         tests:
           - relationships:
               to: ref('customers')
               field: id
-
+        tests:
+          project_dev:
+            +severity: warn
   - name: orders
     columns:
       - name: order_id
@@ -39,6 +53,12 @@ mmodels:
   
 # it is accepting anything above chek later..tests-kailash
 
+
+              
+              
+              
+              
+              
 mmodels:
   - name: kailash
     description: "how to product retails"
@@ -62,3 +82,15 @@ mmodels:
           field: created_at
           interval: 4
           # it will chek 4 days old date 
+    tests:
+      <resource-path>:
+        +fail_calc: <string>
+        +limit: <integer>
+        +severity: error | warn
+        +error_if: <string>
+        +warn_if: <string>
+        +store_failures: true | false
+        +where: <string>
+
+  
+    
