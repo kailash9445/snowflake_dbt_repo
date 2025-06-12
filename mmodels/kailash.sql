@@ -1,4 +1,6 @@
 {{ config(tags=['naresh','kamaleshwar']) }}
+{{ config(tags = ['my_tag']) }}
+{{ config(severity = 'warn') }}
 
 
 select * from DB_KAILASH.SCH_KAILASH.EMPLOYEE --country_codes  ##EMPLOYEE
