@@ -12,7 +12,7 @@ where date_format_status ='invalid format'
 
 {#
 tests:
-  - dbt_expectations.expect_column_values_to_be_between:
+  - dbt_expectations.expect_column_values_to_be_between::
       min_value: 0  # (Optional)
       max_value: 10 # (Optional)
       row_condition: "id is not null" # (Optional)
