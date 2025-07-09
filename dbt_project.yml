@@ -1,7 +1,9 @@
 #-version: 2.0.0--accepts-"" ok--'' ok
 #https://docs.getdbt.com/reference/commands/seed
 #-   PROJECT_DEV  pjt_may2ndhalf
+#-profile: 'mysql'
 name :  "PROJECT_DEV"
+version: 1.0.0
 model-paths: ['mmodels']
 seed-paths: ['seeds']
 analysis-paths: ['analysis']
@@ -11,7 +13,7 @@ test-paths: ['tests']
 
 
 target-path: "target"
-clean-targets: 
+clean-targets:  # directories to be remove by `dbt clean`
   - 'targets'
   - 'dbt-packages'
 #clean-targets: [target, dbt_packages, logs]
